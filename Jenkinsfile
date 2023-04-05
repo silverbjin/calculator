@@ -17,15 +17,15 @@ pipeline {
                }
           }
 
-          stage("Docker build") {
-               steps {
-                    sh "docker build -t silverbjin/calculator ."
-               }
-          }
-          stage("Docker push") {
-               steps {
-                    sh "docker push silverbjin/calculator"
-               }
-          }
+          // stage("Docker build") {
+          //      steps {
+          //           sh "docker build -t silverbjin/calculator ."
+          //      }
+          // }
+          // stage("Docker push") {
+          //      steps {
+          //           sh "docker push silverbjin/calculator"
+          //      }
+          // }
      }
 }
